@@ -28,7 +28,7 @@ def check_week(day_input):
 
 
 def check_sport_name(sport_names, games):
-    if sport_names not in games.keys():
+    if sport_names.lower() not in games.keys():
         return check_sport_name(input("Please select the court you would like to book by inserting game : "), games)
     else:
         print("You inserted number : %s" % sport_names)
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     status = input("Are you a Uniten Student? (Type Yes or No) : ")
 
     while status.lower() not in ['yes', 'no']:
-        status = input("Please enter only 'Yes' or 'No' : ").lower()
+        status = input("Please enter only 'Yes' or 'No' : ")
 
     status = check_user(status)
 
