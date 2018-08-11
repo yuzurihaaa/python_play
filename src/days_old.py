@@ -49,5 +49,4 @@ def test():
             print("Test case passed!")
 
 
-if __name__ == '__main__':
-    test()
+test()
