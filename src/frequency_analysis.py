@@ -14,11 +14,9 @@
 # The normalized frequency is simply the number of occurrences, i,
 # divided by the total number of characters in the message, n.
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
-            'v', 'w', 'x', 'y', 'z']
-
 
 def freq_analysis(message):
+    alphabet = list('abcdefghijklmnopqrstuvwxyz')
     n = len(message)
     message_set = list(message)
     freq_list = []
